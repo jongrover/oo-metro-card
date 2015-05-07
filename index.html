@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Metro Card Balance Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Metro Card Balance Calculator</h1>
+    <form action="#" id="metro_card_calculator">
+      <label for="remaining_amount">Current Remaining Balance</label>
+      <input type="text" id="remaining_amount" placeholder="0.00">
+      <label for="remaining_amount">Number Of Rides Requested</label>
+      <input type="text" id="number_of_rides" placeholder="0">
+      <input type="submit" value="submit">
+    </form>
+    <p>You currently have <span id="rides_remaining">0</span> rides remaining left on your card. Resulting in a remaining balance of <span id="balance_remaining">$0.00</span></p>
+    <p>You need to add <span id="result">$0.00</span> to achieve a zero balance after <span id="more_rides"> 0</span> more rides.</p>
+  </main>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/accounting.min.js"></script>
+  <script src="js/metro-card.js"></script>
+</body>
+</html>
